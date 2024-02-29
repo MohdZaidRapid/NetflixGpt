@@ -3,9 +3,19 @@
 - Create React App
 - Configure Tailwind Css
 
-
-
 # Features
-- Browse Page 
+- Login/Sign Up 
+  - Sign In / Sign Up Form
+  - redirect to Browse Page 
+- Browse Page (after authentication)
     - Header 
-    - gi a
+    - Main Movie
+      - Trailer in Background
+      - Title and description
+      - MovieSuggestions
+          - MovieList * N  
+
+- NetflixGpt
+    - Search GPT
+    - Movie Suggestions        
+ 
