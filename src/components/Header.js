@@ -42,7 +42,6 @@ const Header = () => {
 
     // Unsubscribe when component unmounts
     return () => {
-      console.log("unsubscribe");
       unsubscribe();
     };
   }, []);
