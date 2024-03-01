@@ -31,7 +31,7 @@
 - embedded the youtube video
 - make it autoplay and mute
 - Tailwind classes to make maincontainer look awesome
-  
+- build secondary component
 
 # Features
 - Login/Sign Up 
