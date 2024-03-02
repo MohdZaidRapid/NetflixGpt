@@ -32,6 +32,9 @@
 - make it autoplay and mute
 - Tailwind classes to make maincontainer look awesome
 - build secondary component
+- build movie list
+- TMDB Iamge CDN URL
+- Made the browser page amazing with tailwind
 
 # Features
 - Login/Sign Up 
