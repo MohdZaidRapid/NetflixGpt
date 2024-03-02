@@ -4,14 +4,13 @@ import MovieCard from "./MovieCard";
 const MovieList = ({ title, movies }) => {
   console.log(movies);
   return (
-    <div>
-      <div>
-        <div>
-          <h1>{title}</h1>
-          <div>
-            
-            <MovieCard posterpath={movies[0].poster_path} />
-          </div>
+    <div className="px-6">
+      <h1 className="text-3xl py-4 text-white">{title}</h1>
+      <div className="flex overflow-x-scroll">
+        <div className="flex s">
+          {movies?.map((movie) => (
+            <MovieCard key={movie.id} posterpath={movie.poster_path} />
+          ))}
         </div>
       </div>
     </div>
