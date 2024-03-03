@@ -33,8 +33,10 @@
 - Tailwind classes to make maincontainer look awesome
 - build secondary component
 - build movie list
-- TMDB Iamge CDN URL
+- TMDB Image CDN URL
+- usePopular movie custom hook 
 - Made the browser page amazing with tailwind
+- GPT search feature
 
 # Features
 - Login/Sign Up 

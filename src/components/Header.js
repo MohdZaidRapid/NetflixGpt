@@ -5,10 +5,16 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO } from "../utils/constants";
+import { toggleGptSearchView } from "../utils/gptSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  const handleGptSearchClick = () => {
+    // Toggle GPT Search button
+    dispatch(toggleGptSearchView());
+  };
   const user = useSelector((store) => store.user);
   const handleSignOut = () => {
     signOut(auth)
@@ -51,6 +57,12 @@ const Header = () => {
       <img className="w-44" src={LOGO} alt="logo" />
       {user && (
         <div className="flex p-2">
+          <button
+            className="py-2 px-4 m-2 my-2 bg-purple-800 text-white rounded-lg mx-4"
+            onClick={handleGptSearchClick}
+          >
+            GPT search
+          </button>
           <img className="w-12 h-12" src={user?.photoURL} alt="usericon" />
           <button onClick={handleSignOut} className="font-bold text-white ">
             (Sign Out)

@@ -4,6 +4,7 @@ import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import MainContainer from "./MainContainer";
 import SecondaryContainer from "./SecondaryContainer";
 import usePopularMovies from "../hooks/usePopularMovies";
+import GptSearch from "./GptSearch";
 // import { API_OPTIONS } from "../utils/constants";
 // import { useDispatch } from "react-redux";
 // import { addNowPlayingMovies } from "../utils/moviesSlice";
@@ -15,6 +16,7 @@ const Browse = () => {
   return (
     <div>
       <Header />
+      <GptSearch />
       <MainContainer />
       <SecondaryContainer />
       {/**
