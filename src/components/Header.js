@@ -7,6 +7,7 @@ import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO, SUPPORTED_LANGUAGES } from "../utils/constants";
 import { toggleGptSearchView } from "../utils/gptSlice";
 import lang from "../utils/languageConstants";
+import { changelanguage } from "../utils/configSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -53,8 +54,15 @@ const Header = () => {
     };
   }, []);
 
+  const handleLanguageChange = (e) => {
+    dispatch(changelanguage(e.target.value));
+  };
+
   return (
-    <div className="w-screen absolute px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
+    <div
+      className="w-screen absolute px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between"
+      onChange={handleLanguageChange}
+    >
       <img className="w-44" src={LOGO} alt="logo" />
       {user && (
         <div className="flex p-2">
