@@ -40,6 +40,7 @@
 - GPT search bar 
 - (*)(Bonus)Multi language feature in our app
 - GPT APIS
+- get open api key
 - 
 
 # Features
