@@ -37,6 +37,10 @@
 - usePopular movie custom hook 
 - Made the browser page amazing with tailwind
 - GPT search feature
+- GPT search bar 
+- (*)(Bonus)Multi language feature in our app
+- GPT APIS
+- 
 
 # Features
 - Login/Sign Up 
