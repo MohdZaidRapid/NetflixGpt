@@ -41,7 +41,11 @@
 - (*)(Bonus)Multi language feature in our app
 - GPT APIS
 - get open api key
-- 
+- gpt search api call
+- Reused movie list compoent to movie sugegstion container
+- Memoization
+- Adde .env to file to gitignore
+- make our site reponsive 
 
 # Features
 - Login/Sign Up 
