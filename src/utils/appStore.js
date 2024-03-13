@@ -14,3 +14,4 @@ const appsStore = configureStore({
 });
 
 export default appsStore;
+// 36 clothes 2 socks

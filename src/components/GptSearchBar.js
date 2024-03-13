@@ -23,8 +23,6 @@ const GptSearchBar = () => {
   };
 
   const handleGptSearchClick = async () => {
-   
-
     // make an api call to GPT API and get movie results
 
     const gptQuery =
@@ -38,7 +36,7 @@ const GptSearchBar = () => {
     if (!gptResults && !gptResults.choices) {
       return <h1>not working</h1>;
     }
-    
+
     // return array of movies, seperated
     const gptMovies = gptResults.choices?.[0]?.message?.content.split(",");
 
@@ -47,7 +45,6 @@ const GptSearchBar = () => {
     // [Promise,Promise,Promise,Promise,Promise,Promise]
 
     const tmdbResults = await Promise.all(promiseArray);
-  
 
     dispatch(
       addGptMoviesResult({ movieNames: gptMovies, movieResults: tmdbResults })
