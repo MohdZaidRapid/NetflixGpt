@@ -65,4 +65,4 @@
 - firebase 2901
 - firebase login
 - firebase init 
-https://netflixgpt-ff5fb.web.app
+https://netflixgptpower.netlify.app/
