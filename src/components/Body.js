@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import { useDispatch } from "react-redux";
+import Error from "./Error";
 
 const Body = () => {
   const appRouter = createBrowserRouter([
@@ -18,6 +19,10 @@ const Body = () => {
     {
       path: "/browse",
       element: <Browse />,
+    },
+    {
+      path: "*", // Catch-all route for not found routes
+      element: <Error />,
     },
   ]);
 
