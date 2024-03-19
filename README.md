@@ -66,3 +66,17 @@
 - firebase login
 - firebase init 
 https://netflixgptpower.netlify.app/
+
+<!-- // {
+//   "hosting": {
+//     "public": "build",
+//     "ignore": [
+//       "firebase.json",
+//       "**/.*",
+//       "**/node_modules/**"
+//     ]
+//   }
+// } -->
+
+
+
